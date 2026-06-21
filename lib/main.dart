@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Page2.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:from_css_color/from_css_color.dart';
 
 void main() => runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -20,7 +22,7 @@ class home extends StatelessWidget {
         height: MediaQuery.of(context).size.height, //tinggi diatur sesuai dengan lebar layar
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("images/background.jpg"), 
+            image: AssetImage("images/background.png"), 
             fit: BoxFit.cover
           ), 
         ),
@@ -35,7 +37,7 @@ class home extends StatelessWidget {
             alignment: Alignment.center,
             child: Card(
               shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(15.0), ),
-              color: Color.fromRGBO(86, 95, 150, 1),
+              color: fromCssColor('#777C6D'),
                 child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -47,12 +49,12 @@ class home extends StatelessWidget {
                       ), 
                       Text("Arlin Nurliani", 
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 16, color: Color.fromARGB(248, 6, 3, 53))
+                        style: GoogleFonts.poppins(fontSize: 16, color: fromCssColor('#EEEEEE'),)
                       ),
 
                       Text("Vacational High School Student at SMK Wikrama Bogor", 
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 16, color: Color.fromARGB(248, 2, 1, 24))
+                        style: GoogleFonts.poppins(fontSize: 16, color: fromCssColor('#EEEEEE'),)
                       ), 
 
                       TextButton(onPressed: (){
@@ -60,7 +62,7 @@ class home extends StatelessWidget {
                           context, 
                           MaterialPageRoute(builder: (context) => Page2()), 
                         );
-                      }, child:Text('See more')
+                      }, child:Text('See more', style: TextStyle(color: fromCssColor('#EEEEEE'),),), 
                       ),
                     ],
                   ),

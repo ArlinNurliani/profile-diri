@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:from_css_color/from_css_color.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
@@ -11,7 +13,7 @@ class Page2 extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("images/background.jpg"),
+            image: AssetImage("images/background.png"),
             fit: BoxFit.cover
           ),
         ),
@@ -30,7 +32,7 @@ class Page2 extends StatelessWidget {
                     padding: EdgeInsets.all(8),
                     child: Icon(
                       Icons.arrow_back,
-                      color: Color.fromARGB(248, 6, 3, 53),
+                      color: fromCssColor('#777C6F'),
                       size: 28,
                     ),
                   ),
@@ -46,10 +48,10 @@ class Page2 extends StatelessWidget {
                       SizedBox(height: 10),
                       Text(
                         "Arlin Nurliani",
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(248, 6, 3, 53),
+                          color: fromCssColor('#777C6F'),
                         ),
                       ),
                     ],
@@ -61,7 +63,8 @@ class Page2 extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
                   ),
-                  color: Color.fromRGBO(86, 95, 150, 1),
+                  // color: Color.from(alpha: 1, red: 0.337, green: 0.373, blue: 0.588),
+                  color: fromCssColor('#777C6D'),
                   child: Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Column(
@@ -69,19 +72,19 @@ class Page2 extends StatelessWidget {
                       children: [
                         Text(
                           "About",
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                           color: fromCssColor('#EEEEEE'),
                           ),
                         ),
                         SizedBox(height: 8),
                         Text(
-                          "Aku adalah Judy Hopps, kelinci pertama yang berhasil menjadi polisi di Zootopia. Aku dikenal sebagai sosok yang optimis, idealis, dan penuh tekad. Meskipun sering diremehkan, aku terus berusaha membuktikan kemampuanku. Dalam perjalananku, aku bekerja sama dengan Nick Wilde, seekor rubah yang licik, untuk memecahkan berbagai kasus.",
+                          "Siswa SMK Wikrama Bogor kelas 11 jurusan PPLG  yang memiliki minat di bidang teknologi informasi, pengembangan web, dan desain digital. Saya memiliki kemampuan dasar dalam pembuatan website menggunakan HTML, CSS, JavaScript, PHP. Saya adalah pribadi yang disiplin, bertanggung jawab, dan mampu bekerja sama dengan baik dalam tim maupun secara mandiri. Melalui program PKL, saya ingin mendapatkan pengalaman kerja nyata serta mengembangkan kemampuan yang saya miliki di dunia industri.",
                           textAlign: TextAlign.justify,
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: 14,
-                            color: Colors.white,
+                           color: fromCssColor('#EEEEEE'),
                           ),
                         ),
                       ],
@@ -94,36 +97,36 @@ class Page2 extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
                   ),
-                  color: Color.fromRGBO(58, 64, 103, 1),
+                   color: fromCssColor('#777C6D'),
                   child: Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "History",
-                          style: TextStyle(
+                          "Education - SMK WIKRAMA BOGOR",
+                          style: GoogleFonts.poppins(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                           color: fromCssColor('#EEEEEE'),
                           ),
                         ),
                         SizedBox(height: 8),
                         Text(
-                          "Aku lahir dan dibesarkan di kota kecil bernama Bunnyburrow, tempat sebagian besar kelinci hidup sederhana sebagai petani. Sejak kecil, aku sudah punya mimpi besar: menjadi polisi di Zootopia, sesuatu yang dianggap mustahil bagi seekor kelinci. Meski sering diragukan, aku tidak menyerah dan terus berusaha membuktikan bahwa aku mampu.",
+                          "Saya Mempelajari dasar-dasar pemrograman. Membuat proyek website menggunakan HTML, CSS, dan JavaScript, PHP. Mempelajari desain antarmuka (UI/UX) dan basis data Berpartisipasi dalam tugas dan proyek pengembangan aplikasi.",
                           textAlign: TextAlign.justify,
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: 14,
-                            color: Colors.white,
+                           color: fromCssColor('#EEEEEE'),
                           ),
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Aku akhirnya berhasil masuk akademi kepolisian Zootopia. Di sana, aku menghadapi berbagai tantangan fisik dan mental, tapi dengan kerja keras dan tekad, aku lulus sebagai yang terbaik di angkatanku. Setelah resmi menjadi polisi, aku ditempatkan di Departemen Kepolisian Zootopia, meskipun awalnya hanya diberi tugas sebagai petugas parkir.",
+                          "Saya juga sudah membuat projek menggunakan beberapa framework seperti Laravel, expressJs, dsb.", 
                           textAlign: TextAlign.justify,
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: 14,
-                            color: Colors.white,
+                           color: fromCssColor('#EEEEEE'),
                           ),
                         ),
                       ],
@@ -136,23 +139,23 @@ class Page2 extends StatelessWidget {
                   width: double.infinity,
                   padding: EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(58, 64, 103, 1),
+                     color: fromCssColor('#777C6D'),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Skill", style: TextStyle(
+                      Text("Skill", style: GoogleFonts.poppins(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                         color: Colors.amberAccent, // Beda warna heading
                       )),
                       SizedBox(height: 10),
-                      Text("HTML", style: TextStyle(color: Colors.white, fontSize: 14)),
+                      Text("HTML", style: GoogleFonts.poppins(color: Colors.white, fontSize: 14)),
                       SizedBox(height: 8),
-                      Text("CSS", style: TextStyle(color: Colors.white, fontSize: 14)),
+                      Text("CSS", style: GoogleFonts.poppins(color: Colors.white, fontSize: 14)),
                       SizedBox(height: 8),
-                      Text("Javascript", style: TextStyle(color: Colors.white, fontSize: 14)),
+                      Text("Javascript", style: GoogleFonts.poppins(color: Colors.white, fontSize: 14)),
                     ],
                   ),
                 ),
